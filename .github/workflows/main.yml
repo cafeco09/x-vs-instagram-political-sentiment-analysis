@@ -8,6 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Needed to push the graph back to your repo
 
     steps:
       - name: Checkout Repository
@@ -19,8 +21,7 @@ jobs:
           python-version: '3.10'
 
       - name: Install Analysis Tools
-        run: |
-          pip install pandas matplotlib
+        run: pip install pandas matplotlib
 
       - name: Execute Sentiment Script
         run: python sentiment_analysis_report.py
@@ -30,5 +31,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add results/
-          git commit -m "Update sentiment graph with latest platform data" || exit 0
+          git commit -m "Update sentiment graph" || exit 0
           git push
