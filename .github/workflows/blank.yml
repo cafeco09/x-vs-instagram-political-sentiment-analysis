@@ -1,9 +1,9 @@
-name: Generate Political Analysis
+name: Political Sentiment Analysis
 
 on:
   push:
     branches: [ "main" ]
-  workflow_dispatch: # Allows you to run it manually
+  workflow_dispatch: 
 
 jobs:
   build:
@@ -18,17 +18,17 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install Dependencies
+      - name: Install Analysis Tools
         run: |
           pip install pandas matplotlib
 
-      - name: Run Analysis Script
+      - name: Execute Sentiment Script
         run: python sentiment_analysis_report.py
 
-      - name: Commit and Push Graph
+      - name: Save Results to Repository
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add results/
-          git commit -m "Auto-generated sentiment graph from latest data" || exit 0
+          git commit -m "Update sentiment graph with latest platform data" || exit 0
           git push
