@@ -79,3 +79,11 @@ def run_political_analysis(ig_file, x_file):
 
 if __name__ == "__main__":
     run_political_analysis('instagram.json', 'x.json')
+
+- name: Commit and Push Graph
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add results/
+        git commit -m "Auto-generated sentiment graph" || exit 0
+        git push
