@@ -22,7 +22,6 @@ jobs:
         run: |
           pip install pandas matplotlib
 
-      # If you keep the name 'script', change the filename below to 'script'
       - name: Run Analysis Script
         run: python sentiment_analysis_report.py
 
