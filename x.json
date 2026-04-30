@@ -1,0 +1,48 @@
+[
+  {
+    "id": "2049208884280062270",
+    "user_posted": "WhiteHouse",
+    "name": "The White House",
+    "description": "TWO KINGS. 👑",
+    "date_posted": "2026-04-28T19:27:25.000Z",
+    "photos": [
+      "https://pbs.twimg.com/media/HHBAaMtWIAAb1Fi.jpg"
+    ],
+    "url": "https://x.com/WhiteHouse/status/2049208884280062270",
+    "quoted_post": {
+      "photos": null,
+      "videos": null
+    },
+    "tagged_users": null,
+    "replies": 25403,
+    "reposts": 17910,
+    "likes": 154533,
+    "views": 22481283,
+    "external_url": null,
+    "hashtags": null,
+    "followers": 4532097,
+    "biography": "The Golden Age of America Begins Right Now.\n📱 Text USA to 45470 to receive alerts.",
+    "posts_count": 14632,
+    "profile_image_link": "https://pbs.twimg.com/profile_images/1916971216620982274/1DsLEcqW_normal.jpg",
+    "following": 6,
+    "is_verified": true,
+    "quotes": 9778,
+    "bookmarks": 9177,
+    "parent_post_details": {
+      "post_id": "2049208884280062270",
+      "profile_id": "1879644163769335808",
+      "profile_name": "The White House",
+      "date_posted": "2026-04-28T19:27:25.000Z"
+    },
+    "external_image_urls": null,
+    "videos": null,
+    "external_video_urls": null,
+    "verification_type": "gray",
+    "user_id": "1879644163769335808",
+    "context_added": null,
+    "timestamp": "2026-04-30T17:36:49.915Z",
+    "input": {
+      "url": "https://x.com/WhiteHouse/status/2049208884280062270?utm_source=chatgpt.com"
+    }
+  }
+]
